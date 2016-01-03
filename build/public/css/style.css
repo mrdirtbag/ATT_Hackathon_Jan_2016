@@ -9,17 +9,7 @@ body {
     padding: 0;
 }
 
-.margin-testing { margin: 40px; }
 
-#overlaylaunch-inAbox {
-    display: block;
-    padding: 40px;
-    margin: 40px;
-    background-color: #efefef;
-    font-size: 1.6em;
-    text-decoration: none;
-    text-align: center;
-}
 
 #overlay-inAbox .wrapper {
     text-align: center;

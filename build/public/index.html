@@ -41,14 +41,8 @@
     </div>
 	</div>
 
-	<div id="overlaylaunch-inAbox">Use Left and Right Arrows!</div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="js/app.js"></script>
-
-
-   <video src="/Scream Queens Clip 1080.mp4"
-        height="486" width="864"
+  <video src="/Scream Queens Clip 1080.mp4"
+        height="100%" width="100%"
         id="vid" autoplay="true"
         onabort="writeScreen(' ABORT ')"
         oncanplay="writeScreen(' CAN PLAY ')"
@@ -74,11 +68,11 @@
         onwaiting="writeScreen(' WAITING ')"
     >
     </video>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 
-    <div style="margin:100px; background-color:white;">
-     <p><strong>Available events:</strong></p>
-     <p id="debug" style="max-height:50px; overflow:scroll"> </p>
-    </div>
+
     <!-- Available video events -->
     <script type="text/javascript">
         
