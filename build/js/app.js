@@ -37,14 +37,18 @@ function closeOverlay() {
     });
 }
 
-$('#overlay-shade, .overlay a').live('click', function(e) {
+$("body").keydown(function(e) {
+  if(e.keyCode == 39) {
     closeOverlay();
     if ($(this).attr('href') == '#') e.preventDefault();
+  }
 });
 
 
 // Usage
-$('#overlaylaunch-inAbox').click(function(e) {
+$("body").keydown(function(e) {
+  if(e.keyCode == 37) {
    openOverlay('#overlay-inAbox');
    e.preventDefault();
+  }
 });
