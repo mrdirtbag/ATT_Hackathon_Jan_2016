@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/video.js" type="javascript"></script>
  
 </head>
 <body>
@@ -31,38 +32,6 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/video.js" type="javascript"></script>
-
-
-   <video src="http://localhost:8080/Scream Queens Clip 720.mp4"
-        height="100%" width="100%"
-        dc="86fa5c53935f163ac706e012819e1aa64728ad"
-        id="vid" autoplay="true"
-        onabort="writeScreen(' ABORT ')"
-        oncanplay="writeScreen(' CAN PLAY ')"
-        oncanplaythrough="writeScreen(' CAN PLAY THROUGH' )"
-        oncuechange="writeScreen(' CUE CHANGE ')"
-        ondurationchange="writeScreen(' DURATION CHANGE ')"
-        onemptied="writeScreen(' EMPTIED ')"
-        onended="writeScreen( 'ENDED' )"
-        onerror="writeScreen(' ERROR' )"
-        onloadeddata="writeScreen(' LOADED DATA ')"
-        onloadedmetadata="writeScreen(' LOADED METADATA ')"
-        onloadstart="writeScreen(' LOAD START ')"
-        onpause="writeScreen(' PAUSE ')"
-        onplay="writeScreen(' PLAY ')"
-        onplaying="writeScreen(' PLAYING ')"
-        onprogress="writeScreen(' PROGRESS ')"
-        onratechange="writeScreen(' RATE CHANGE ')"
-        onseeked="writeScreen(' SEEKED ')"
-        onseeking="writeScreen(' SEEKING ')"
-        onstalled="writeScreen(' STALLED ')"
-        onsuspend="writeScreen(' SUSPEND ')"
-        onvolumechange="writeScreen(' VOLUME CHANGE ')"
-        onwaiting="writeScreen(' WAITING ')"
-    >
-    </video>
-
     <!-- Available video events -->
     <script type="text/javascript">
         
@@ -100,5 +69,36 @@
          //Seek to current duration +10
          // sample.currentTime+=10;
        </script>
+
+
+   <video src="http://localhost:8080/Scream Queens Clip 720.mp4"
+        height="1280" width="720"
+        dc="86fa5c53935f163ac706e012819e1aa64728ad"
+        id="vid" autoplay="true"
+        onabort="writeScreen(' ABORT ')"
+        oncanplay="writeScreen(' CAN PLAY ')"
+        oncanplaythrough="writeScreen(' CAN PLAY THROUGH' )"
+        oncuechange="writeScreen(' CUE CHANGE ')"
+        ondurationchange="writeScreen(' DURATION CHANGE ')"
+        onemptied="writeScreen(' EMPTIED ')"
+        onended="writeScreen( 'ENDED' )"
+        onerror="writeScreen(' ERROR' )"
+        onloadeddata="writeScreen(' LOADED DATA ')"
+        onloadedmetadata="writeScreen(' LOADED METADATA ')"
+        onloadstart="writeScreen(' LOAD START ')"
+        onpause="writeScreen(' PAUSE ')"
+        onplay="writeScreen(' PLAY ')"
+        onplaying="writeScreen(' PLAYING ')"
+        onprogress="writeScreen(' PROGRESS ')"
+        onratechange="writeScreen(' RATE CHANGE ')"
+        onseeked="writeScreen(' SEEKED ')"
+        onseeking="writeScreen(' SEEKING ')"
+        onstalled="writeScreen(' STALLED ')"
+        onsuspend="writeScreen(' SUSPEND ')"
+        onvolumechange="writeScreen(' VOLUME CHANGE ')"
+        onwaiting="writeScreen(' WAITING ')"
+    >
+    </video>
+
   </body>
 </html>
