@@ -38,7 +38,7 @@ function closeOverlay() {
 }
 
 $("body").keydown(function(e) {
-  if(e.keyCode == 39) {
+  if(e.keyCode == 48) {
     closeOverlay();
     if ($(this).attr('href') == '#') e.preventDefault();
   }
@@ -47,7 +47,7 @@ $("body").keydown(function(e) {
 
 // Usage
 $("body").keydown(function(e) {
-  if(e.keyCode == 37) {
+  if(e.keyCode == 49) {
    openOverlay('#overlay-inAbox');
    e.preventDefault();
   }
