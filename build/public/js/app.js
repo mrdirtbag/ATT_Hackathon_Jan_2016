@@ -52,3 +52,17 @@ $("body").keydown(function(e) {
    return false;
   }
 });
+
+//show different screen
+$("body").keydown(function(e) {
+  if(e.keyCode == 50) {
+   $('.single-item').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+   });
+   e.preventDefault();
+   return false;
+  }
+});
