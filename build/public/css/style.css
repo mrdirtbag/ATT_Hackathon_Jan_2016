@@ -38,16 +38,15 @@ body {
     position: absolute;
     right: -300px;
     float: right;
-    top: 10px;
+    top: 25px;
     width: 366px;
-    min-height: 1060px;
+    min-height: 1035px;
     z-index: 10000;
     background-color:rgba(0, 0, 26,0.6);
     color: #fff;
     box-shadow: 0 0 16px #000;
-} .ie7 .overlay {
-    height: 200px;
-}
+} 
+.ie7 .overlay {height: 200px;}
 .overlay .wrapper {padding: 15px 30px 30px;}
 .overlay .wrapper .title {font-size: 30px; text-transform: uppercase;}
 .overlay .wrapper .product-info { text-align: left; }
