@@ -41,6 +41,7 @@ $("body").keydown(function(e) {
   if(e.keyCode == 48) {
     closeOverlay();
     if ($(this).attr('href') == '#') e.preventDefault();
+    return false;
   }
 });
 
@@ -50,5 +51,6 @@ $("body").keydown(function(e) {
   if(e.keyCode == 49) {
    openOverlay('#overlay-inAbox');
    e.preventDefault();
+   return false;
   }
 });
