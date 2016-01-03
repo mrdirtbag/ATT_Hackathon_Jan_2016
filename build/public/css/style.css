@@ -9,9 +9,12 @@ body {
     padding: 0;
 }
 
-a#overlaylaunch-inAbox {
+.margin-testing { margin: 40px; }
+
+#overlaylaunch-inAbox {
     display: block;
     padding: 40px;
+    margin: 40px;
     background-color: #efefef;
     font-size: 1.6em;
     text-decoration: none;
@@ -45,6 +48,7 @@ a#overlaylaunch-inAbox {
     position: absolute;
     right: -300px;
     float: right;
+    top: 10px;
     width: 366px;
     min-height: 200px;
     z-index: 10000;
@@ -56,7 +60,7 @@ a#overlaylaunch-inAbox {
 } .overlay .wrapper {
     padding: 15px 30px 30px;
 }
-.overlay .wrapper h3 {
+.overlay .wrapper h2 {
     text-transform: uppercase;
 }
 .overlay .wrapper .product-info { text-align: left; }
