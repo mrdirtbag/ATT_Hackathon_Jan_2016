@@ -22,7 +22,7 @@ function openOverlay(olEl) {
             })
             .animate({
                 right : props.scrTop + 40,
-                opacity : 0.6
+                opacity : 1
             }, 600);
     });
 }

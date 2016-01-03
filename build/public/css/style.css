@@ -4,7 +4,7 @@ body {
     background-color: #ccc;
     font-size: 88%;
     line-height: 1.6;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'DIN';
     color: #4e4e4e;
     padding: 0;
 }
@@ -46,17 +46,28 @@ a#overlaylaunch-inAbox {
     position: absolute;
     right: -300px;
     float: right;
-    width: 450px;
+    width: 366px;
     min-height: 200px;
     z-index: 10000;
-    background-color: #000000;
-    border: 10px solid #000000;
+    background-color:rgba(0, 0, 26,0.6);
     color: #fff;
     box-shadow: 0 0 16px #000;
 } .ie7 .overlay {
     height: 200px;
 } .overlay .wrapper {
     padding: 15px 30px 30px;
+}
+.overlay .wrapper h3 {
+    text-transform: uppercase;
+}
+.overlay .wrapper .product-info { text-align: left; }
+.overlay .wrapper .product-info .brand { margin-top: -20px; }
+.overlay .wrapper .product-info .details { margin-top: 20px;  }
+.overlay .wrapper .agent { margin-top: 40px; }
+.overlay .wrapper .agent .image {display: inline;float: left;}
+.overlay .wrapper .agent .name {display: inherit;}
+.overlay .wrapper .agent .name span {
+    display: block;
 }
 
 
