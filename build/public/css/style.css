@@ -57,21 +57,16 @@ body {
     box-shadow: 0 0 16px #000;
 } .ie7 .overlay {
     height: 200px;
-} .overlay .wrapper {
-    padding: 15px 30px 30px;
 }
-.overlay .wrapper h2 {
-    text-transform: uppercase;
-}
+.overlay .wrapper {padding: 15px 30px 30px;}
+.overlay .wrapper h2 {text-transform: uppercase;}
 .overlay .wrapper .product-info { text-align: left; }
 .overlay .wrapper .product-info .brand { margin-top: -20px; }
 .overlay .wrapper .product-info .details { margin-top: 20px;  }
 .overlay .wrapper .agent { margin-top: 40px; }
 .overlay .wrapper .agent .image {display: inline;float: left;}
 .overlay .wrapper .agent .name {display: inherit;}
-.overlay .wrapper .agent .name span {
-    display: block;
-}
+.overlay .wrapper .agent .name span {display: block;}
 
 
 .overlay .toolbar {
