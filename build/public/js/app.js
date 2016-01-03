@@ -11,17 +11,15 @@ function openOverlay(olEl) {
             viewPortWidth   : $(window).width()
         };
 
-        var leftPos = (props.viewPortWidth - props.oLayWidth) / 2;
 
         $oLay
             .css({
                 display : 'block',
                 opacity : 0,
-                right : '-=300',
-                //left : leftPos+'px'
+                right : '-=300'
             })
             .animate({
-                right : props.scrTop + 40,
+                right : 220,
                 opacity : 1
             }, 600);
     });
