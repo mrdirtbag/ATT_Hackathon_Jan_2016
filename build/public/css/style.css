@@ -49,13 +49,14 @@ body {
     height: 200px;
 }
 .overlay .wrapper {padding: 15px 30px 30px;}
-.overlay .wrapper h2 {text-transform: uppercase;}
+.overlay .wrapper h2 {font-style: 26px; text-transform: uppercase;}
 .overlay .wrapper .product-info { text-align: left; }
+.overlay .wrapper .product-info .name {font-size: 18px;}
 .overlay .wrapper .product-info .brand { margin-top: -20px; }
-.overlay .wrapper .product-info .details { margin-top: 20px;  }
+.overlay .wrapper .product-info .details { font-size:18px;margin-top: 20px;  }
 .overlay .wrapper .agent { margin-top: 40px; }
 .overlay .wrapper .agent .image {display: inline;float: left;}
-.overlay .wrapper .agent .name {display: inherit;}
+.overlay .wrapper .agent .name {display: inherit;font-size:18px;height:85px;padding-top:29px;}
 .overlay .wrapper .agent .name span {display: block;}
 
 
