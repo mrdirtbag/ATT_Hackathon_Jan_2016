@@ -35,20 +35,86 @@ function closeOverlay() {
     });
 }
 
+
+// Usage #0
 $("body").keydown(function(e) {
   if(e.keyCode == 48) {
+    console.log("#0");
     closeOverlay();
-    if ($(this).attr('href') == '#') e.preventDefault();
+    if ($(this).attr('href') == '#') e.defaultPrevented();
     return false;
   }
 });
 
 
-// Usage
+// Usage #1
 $("body").keydown(function(e) {
   if(e.keyCode == 49) {
-   openOverlay('#overlay-inAbox');
-   e.preventDefault();
-   return false;
+    console.log("#1");
+    openOverlay('#overlay-inAbox');
+    
+    e.defaultPrevented();
+
+    return false;
+  }
+
+});
+
+// Usage #2  - Hide slide view & play
+$("body").keydown(function(e) {
+  if(e.keyCode == 50) {
+
+    codeCalled(0);
+    return false;
   }
 });
+
+// Usage #3  - pause and show slide view
+$("body").keydown(function(e) {
+  if(e.keyCode == 51) {
+    codeCalled(1);
+    return false;
+  }
+});
+
+function completedTx() {
+    // pause playback
+    var sample = document.getElementById("vid");
+    sample.play();
+ 
+    // slide overlay away
+    closeOverlay();
+
+    // update other instances
+    updateOtherViews();
+
+}
+
+function startTx() {
+    // pause playback
+    var sample = document.getElementById("vid");
+    sample.pause();
+
+    // slide in overlay
+    openOverlay('#overlay-inAbox');
+
+    // update other instances
+    updateOtherViews();
+}
+
+function codeCalled(code) {
+    viewStatus.code = code;
+
+    switch(code) {
+        case 0:
+            completedTx();
+            break;
+        case 1:
+            startTx();
+            break;
+        default:
+
+    }
+
+    
+}
