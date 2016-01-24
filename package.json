@@ -4,6 +4,8 @@
   "description": "DirectTV app to purchase items from shows example",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.14.2",
+    "ejs": "^2.4.1",
     "express": "^4.13.4",
     "http": "0.0.0",
     "jquery": "^2.2.0",
