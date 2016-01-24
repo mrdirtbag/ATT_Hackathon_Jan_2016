@@ -8,7 +8,4 @@
 1. Clone the directly onto your computer
 2. Open the clone file
 3. Open the build file within the App folder
-4. Run: 
-''' shell 
-node server.js
-'''
+4. Run: `node server.js`
