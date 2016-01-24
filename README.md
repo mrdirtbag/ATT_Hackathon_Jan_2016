@@ -12,7 +12,10 @@
 
 ### App Functionality
 #
--`key: 1` Open Available Products Panel
--`key: 0` Close Available Products Panel
--`key: 3` Open Available Products Panel and pauses video on two browsers
--`key: 2` Close Available Products Panel and pauses video on two browsers
+`key: 1` Open Available Products Panel
+
+`key: 0` Close Available Products Panel
+
+`key: 3` Open Available Products Panel and pauses video on two browsers
+
+`key: 2` Close Available Products Panel and pauses video on two browsers
