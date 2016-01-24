@@ -1,5 +1,5 @@
 //Initiate the WebSocket connection through socket.io
-var socket = io.connect();
+var socket = io();
 //Assume we're not a stb
 // var stb = false;
 // //If we are a stb, set the resolution
