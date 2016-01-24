@@ -8,9 +8,9 @@
 #
 1. Clone the directly onto your computer
 2. Open the clone file
-3. Run `npm install`
-4. Open the build file within the App folder
-5. Run: `node server.js`
+3. Open App folder
+4. Run `npm install`
+5. Run: `node app.js`
 
 ### App Functionality
 #
